@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FB142091672BF3500853D2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB142081672BF3500853D2B /* Cocoa.framework */; };
+		1FB142131672BF3500853D2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FB142111672BF3500853D2B /* InfoPlist.strings */; };
+		1FB142151672BF3500853D2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB142141672BF3500853D2B /* main.m */; };
+		1FB142191672BF3500853D2B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB142171672BF3500853D2B /* Credits.rtf */; };
+		1FB1421C1672BF3500853D2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1421B1672BF3500853D2B /* AppDelegate.m */; };
+		1FB1421F1672BF3500853D2B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB1421D1672BF3500853D2B /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FB142041672BF3500853D2B /* Strava OAuth Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strava OAuth Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB142081672BF3500853D2B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1FB1420B1672BF3500853D2B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1FB1420C1672BF3500853D2B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1FB1420D1672BF3500853D2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FB142101672BF3500853D2B /* Strava OAuth Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Strava OAuth Example-Info.plist"; sourceTree = "<group>"; };
+		1FB142121672BF3500853D2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FB142141672BF3500853D2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FB142161672BF3500853D2B /* Strava OAuth Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Strava OAuth Example-Prefix.pch"; sourceTree = "<group>"; };
+		1FB142181672BF3500853D2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1FB1421A1672BF3500853D2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FB1421B1672BF3500853D2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FB1421E1672BF3500853D2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FB142011672BF3500853D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB142091672BF3500853D2B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FB141F91672BF3500853D2B = {
+			isa = PBXGroup;
+			children = (
+				1FB1420E1672BF3500853D2B /* Strava OAuth Example */,
+				1FB142071672BF3500853D2B /* Frameworks */,
+				1FB142051672BF3500853D2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FB142051672BF3500853D2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FB142041672BF3500853D2B /* Strava OAuth Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FB142071672BF3500853D2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FB142081672BF3500853D2B /* Cocoa.framework */,
+				1FB1420A1672BF3500853D2B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FB1420A1672BF3500853D2B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FB1420B1672BF3500853D2B /* AppKit.framework */,
+				1FB1420C1672BF3500853D2B /* CoreData.framework */,
+				1FB1420D1672BF3500853D2B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1FB1420E1672BF3500853D2B /* Strava OAuth Example */ = {
+			isa = PBXGroup;
+			children = (
+				1FB1421A1672BF3500853D2B /* AppDelegate.h */,
+				1FB1421B1672BF3500853D2B /* AppDelegate.m */,
+				1FB1421D1672BF3500853D2B /* MainMenu.xib */,
+				1FB1420F1672BF3500853D2B /* Supporting Files */,
+			);
+			path = "Strava OAuth Example";
+			sourceTree = "<group>";
+		};
+		1FB1420F1672BF3500853D2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FB142101672BF3500853D2B /* Strava OAuth Example-Info.plist */,
+				1FB142111672BF3500853D2B /* InfoPlist.strings */,
+				1FB142141672BF3500853D2B /* main.m */,
+				1FB142161672BF3500853D2B /* Strava OAuth Example-Prefix.pch */,
+				1FB142171672BF3500853D2B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FB142031672BF3500853D2B /* Strava OAuth Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB142221672BF3500853D2B /* Build configuration list for PBXNativeTarget "Strava OAuth Example" */;
+			buildPhases = (
+				1FB142001672BF3500853D2B /* Sources */,
+				1FB142011672BF3500853D2B /* Frameworks */,
+				1FB142021672BF3500853D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Strava OAuth Example";
+			productName = "Strava OAuth Example";
+			productReference = 1FB142041672BF3500853D2B /* Strava OAuth Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FB141FB1672BF3500853D2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Strava;
+			};
+			buildConfigurationList = 1FB141FE1672BF3500853D2B /* Build configuration list for PBXProject "Strava OAuth Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1FB141F91672BF3500853D2B;
+			productRefGroup = 1FB142051672BF3500853D2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FB142031672BF3500853D2B /* Strava OAuth Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FB142021672BF3500853D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB142131672BF3500853D2B /* InfoPlist.strings in Resources */,
+				1FB142191672BF3500853D2B /* Credits.rtf in Resources */,
+				1FB1421F1672BF3500853D2B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FB142001672BF3500853D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB142151672BF3500853D2B /* main.m in Sources */,
+				1FB1421C1672BF3500853D2B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FB142111672BF3500853D2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FB142121672BF3500853D2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FB142171672BF3500853D2B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FB142181672BF3500853D2B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1FB1421D1672BF3500853D2B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FB1421E1672BF3500853D2B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FB142201672BF3500853D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FB142211672BF3500853D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1FB142231672BF3500853D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Strava OAuth Example/Strava OAuth Example-Prefix.pch";
+				INFOPLIST_FILE = "Strava OAuth Example/Strava OAuth Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FB142241672BF3500853D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Strava OAuth Example/Strava OAuth Example-Prefix.pch";
+				INFOPLIST_FILE = "Strava OAuth Example/Strava OAuth Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FB141FE1672BF3500853D2B /* Build configuration list for PBXProject "Strava OAuth Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB142201672BF3500853D2B /* Debug */,
+				1FB142211672BF3500853D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB142221672BF3500853D2B /* Build configuration list for PBXNativeTarget "Strava OAuth Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FB142231672BF3500853D2B /* Debug */,
+				1FB142241672BF3500853D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FB141FB1672BF3500853D2B /* Project object */;
+}
