@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#import "OAuthWindowController.h"
 
-@property (assign) IBOutlet NSWindow *window;
+@interface AppDelegate : NSObject <NSApplicationDelegate, OAuthWindowControllerDelegate>
 
+@property (weak) IBOutlet NSWindow *window;
+
+- (IBAction)connectWithStrava:(id)sender;
 @end

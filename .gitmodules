@@ -1,0 +1,6 @@
+[submodule "External/CocoaHTTPServer"]
+	path = External/CocoaHTTPServer
+	url = https://github.com/robbiehanson/CocoaHTTPServer.git
+[submodule "External/AFNetworking"]
+	path = External/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
