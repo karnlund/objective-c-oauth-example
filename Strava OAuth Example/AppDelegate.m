@@ -47,7 +47,6 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
-    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
 }
 
 #pragma mark - Actions
