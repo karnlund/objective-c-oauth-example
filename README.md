@@ -39,7 +39,8 @@ sure to disable ARC on those files in the Compile Sources build phase using the
 2. Clone or download this repository - the dependencies are vendored as
 CocoaPods, but you can optionally run `pod update` to get the latest
 versions.
-3. Open `Strava OAuth Example.xcworkspace` - do not use `Strava OAuth Example.xcproj`.
+3. Open `Strava OAuth Example.xcworkspace` - do not use `Strava OAuth
+Example.xcodeproj`.
 4. Update `StravaOAuthCredentials.m` with your client ID and secret.
 
 # OAuth Workflow
