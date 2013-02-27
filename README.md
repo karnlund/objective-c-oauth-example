@@ -49,16 +49,24 @@ Example.xcodeproj`.
 2. The application spawns an `OAuthWindowController` with a new window and embedded `WebView`
 		pointing to http://strava.com/oauth/authorize passing `client_id`, `redirect_uri`, `response_type=code`,
 		the requested scopes (`view_private` and/or `write`, space separated), and `approval_prompt=force`.
-		It also starts an HTTP server listening on an available localhost
-    port using an `HTTPConnection` subclass called `OAuthConnectionHandler` to monitor incoming connections
-    by overriding the `HTTPConnection` method `-supportsMethod:atPath`.
+		
+  1. The window controller simultaneously starts an HTTP server listening on an available localhost
+     port.
+  2. The controller registers a `HTTPConnection` subclass called `OAuthConnectionHandler` to monitor incoming connections
+     by overriding the `HTTPConnection` method `-supportsMethod:atPath`.
+  3. Anytime the local webserver receives an incoming connection it will
+     run through the `-supportsMethod:atPath` method on
+     `OAuthConnectionHandler` to process the incoming request.
 3. The user logs in to Strava, then chooses to authorize or not authorize.
 4. Strava redirects the user back to the localhost redirect URI where the HTTP server monitors the
 		request.
 5. If successful and the user authorizes the local web server will receive a request token in the
-		`code` parameter.
+		`code` parameter and the `OAuthConnectionHandler` will look for any
+   incoming request with a `code` parameter.
 6. The `OAuthWindowController` then requests an access token from Strava by POSTing the request token,
-		the `client_id`, and `client_secret` to http://strava.com/oauth/token.
+	 the `client_id`, and `client_secret` to
+   http://strava.com/oauth/token by passing the request token it received
+   earlier.
 7. If successful Strava will respond with a JSON object containing an access token. This access token
 		can then be used to access resources in the Strava V3 API by passing it as a query parameter named
 		`access_token` or in an HTTP header named `Authorization` in the format `access_token %@` where
