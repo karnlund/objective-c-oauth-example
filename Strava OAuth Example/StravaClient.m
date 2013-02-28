@@ -14,7 +14,7 @@
 {
     static StravaClient* sharedClient = nil;
     if (!sharedClient) {
-        NSURL *url = [NSURL URLWithString:@"https://strava.com"];
+        NSURL *url = [NSURL URLWithString:@"https://www.strava.com"];
         sharedClient = [[super alloc] initWithBaseURL:url];
     }
     return sharedClient;
@@ -22,6 +22,7 @@
 
 + (void)setAccessToken:(NSString*)accessToken
 {
-    [[self sharedClient] setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"access_token %@", accessToken]];
+    [[self sharedClient] setDefaultHeader:@"Authorization"
+                                    value:[NSString stringWithFormat:@"access_token %@", accessToken]];
 }
 @end
